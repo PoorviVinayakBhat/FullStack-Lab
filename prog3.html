@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>String operations</title>
+    </head>
+    <body>
+        <script>
+            let str=prompt("enter strint containing the word javaScript:");
+            console.log("length of the string"+str.length);
+            let startIndex=str.indexOf("javaScript");
+            let extractedWord=str.substring(startIndex, startIndex+10);
+            console.log("extracted word:"+extractedWord);
+            let newString=str.replace("javaScript", "JS");
+            console.log("new string after replacement:"+newString);
+        </script>
+    </body>
+</html>

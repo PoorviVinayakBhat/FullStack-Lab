@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Array Operations</title>
+    </head>
+    <body>
+        <script>
+            let cities = ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"];
+            console.log("initial cities:"+cities);
+            console.log("total cities:"+cities.length);
+            cities.push("Philadelphia");
+            console.log("after adding a city:"+cities);
+            cities.shift();
+            console.log("after removing the first city:"+cities);
+            let index=cities.indexOf("Chicago");
+            console.log("index of Chicago:"+index);
+            console.log("final length of cities:"+cities.length);
+        </script>
+    </body>
+</html>

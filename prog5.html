@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Object operations</title>
+    </head>
+    <body>
+        <script>
+            student={nam:"Rama",grade:58, subjects:["science","maths","english"]};
+function displayInfo()
+{
+    console.log(student);
+}
+displayInfo();
+if(student.grade>40)
+{
+    console.log("pass");
+}else{
+    console.log("fail");
+}
+console.log("the keys of student object are:")
+for(let key in student)
+{
+    console.log(key);
+}
+console.log("the values of student object are:");
+for(let key in student)
+{
+    let value;
+    value=student[key];
+    console.log(value);
+}
+
+        </script>
+    </body>
+</html>

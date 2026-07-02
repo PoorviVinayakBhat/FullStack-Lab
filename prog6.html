@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Program 4</title>
+</head>
+
+<body>
+
+    <!-- Button -->
+    <h3>1. Button Event</h3>
+    <button id="myButton">Click me</button>
+
+    <hr>
+
+    <!-- Image -->
+    <h3>2. Image Hover Event</h3>
+
+    <img id="myImage"
+        src="https://picsum.photos/300"
+        alt="image"
+        style="width:300px; border:6px solid black;">
+
+    <hr>
+
+    <!-- Keyboard -->
+    <h3>3. Key Press Event</h3>
+    <p>Press any key and check console</p>
+
+
+    <script>
+
+        // Button click
+        document.getElementById("myButton")
+            .addEventListener("click", function () {
+                console.log("button clicked");
+            });
+
+
+        // Image hover
+        const image = document.getElementById("myImage");
+
+        image.addEventListener("mouseover", function () {
+            image.style.borderColor = "red";
+        });
+
+        image.addEventListener("mouseout", function () {
+            image.style.borderColor = "black";
+        });
+
+
+        // Key press
+        document.addEventListener("keydown", function (event) {
+            console.log("Key pressed:", event.key);
+        });
+
+    </script>
+
+</body>
+</html>
